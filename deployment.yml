@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: mohamedrafraf/nodeapp_test:$TAG_IMAGE
+        image: mohamedrafraf/todoapp-demo:$TAG_IMAGE
         ports:
         - containerPort: 3000
