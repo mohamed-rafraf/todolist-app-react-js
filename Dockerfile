@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:alpine
 
 WORKDIR /usr/src/app
 
@@ -9,4 +9,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD [ "node", "start index.js" ]
+CMD [ "/bin/sh", "-c" ,"npm start" ]
